@@ -1,0 +1,9 @@
+Forms of operator:-
+Unary Operator:-
+An operator that works only one operand is called as unary operator
+Ex:-a++ or a-- or b++ or b-- or --a or --b
+Binary operator:-
+An operator that works with two operands is called as binary operator
+Ex:-a+b,a-b,a*b,a/b etc...
+Ternary Operator:-
+An operators that works with three operands or expression.(a>b)?a is big : b is big
