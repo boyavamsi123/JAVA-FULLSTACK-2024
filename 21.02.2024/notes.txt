@@ -7,3 +7,10 @@ An operator that works with two operands is called as binary operator
 Ex:-a+b,a-b,a*b,a/b etc...
 Ternary Operator:-
 An operators that works with three operands or expression.(a>b)?a is big : b is big
+
+Logical Operators:-
+A     B      A&&B      A||B 
+T     T       T         T
+T     F       F         T
+F     T       F         T
+F     F       F         F
