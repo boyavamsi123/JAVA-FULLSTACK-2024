@@ -9,4 +9,3 @@ public class circumference {
         // area of a circle is : pi*(r*r)
         // circumference of a circle is : 2*pi*r
     }
-}
