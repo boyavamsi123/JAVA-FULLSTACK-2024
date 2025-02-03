@@ -1,0 +1,47 @@
+p,t,r,si:-
+
+p - principle
+t - time
+r - rate
+si - simple interest
+
+Using Scanner Class:-
+The Scanner Class is a predefined class in java.it is a part of java.util
+package. and that packages included in jdk(java development kit). It is 
+used to input different types of values.
+
+import java.util.*;
+1.next(); :- it scans the next value from the terminal.
+2.nextBoolean(); :- it scans the nextBoolean value from the terminal.
+3.nextByte(); :- it scans the nextByte value from the terminal.
+4.nextDouble(); :- it scans the nextDouble value from the terminal.
+5.nextFloat(); :- it scans the nextFloat value from terminal.
+6.nextInt(); :- it scans the nextInteger value from terminal.
+7.nextLine(); :- it scans the complete line of the text from the terminal.
+8.nextLong(); :- it scans the nextLong value from the terminal.
+9.nextShort(); :- it scans the next short value from the terminal.
+Examples:-
+To accept a word :-
+String w = sc.next();
+To accept a sentence:-
+String s = sc.nextLine();
+To Accept an integer:-
+a.Integer of size 1 byte:-
+  byte s = sc.nextByte();
+b.Integer of size 2 bytes:-
+  short s = sc.nextShort();
+c.Integer of size 4 bytes:-
+  int n = sc.nextInt();
+d.Integer of size 8 bytes:-
+  long l = sc.nextLong();
+To Accept a real number:-
+a.Real number of size 4 bytes.
+  flot f = sc.nextFloat();
+b.Real number of size 8 bytes.
+  double d = sc.nextDouble();
+To accept a character:-
+   char c = sc.next().chartAt(0);
+Write a program to find the value of a cube, volume of a sphere,volue of
+a cuboid by input the required values from user using Scanner class.
+
+    
