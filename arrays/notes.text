@@ -1,0 +1,15 @@
+array:-array is a container to store a group of data/elements
+array is of fixed size 
+array can store only homogeneous data
+array is of index based and index position starts from 0
+
+first method array representation:-
+
+//array declaration
+int[] a;
+//array creation
+a = new int [3];
+
+second method array representation:-
+
+int[] a = {10,20,30};
