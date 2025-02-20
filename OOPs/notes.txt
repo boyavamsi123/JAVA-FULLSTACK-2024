@@ -1,0 +1,139 @@
+Constructor:-
+1.Constructor is a set of instructions used for initialization
+(Assigning) and Intatiation (Object creation)
+2.Constructor name and class name be always same.
+3.Constructor will not have return type.
+4.Constructor will get executed at the time of object creation.
+5.Constructor are categorized into two types.
+  1.Default Constructor
+  2.Custom / User Define Constructor
+
+1.Default Constructor:-
+- if a Constructor is not explicity present  in a class, then the compiler 
+will automatically generate a Constructor and these Constructors are called as default 
+Constructor.
+2.Custom / User Constructor:-
+- If a Constructor is explicity default inside a class by the user or the
+programmer then we refer it as Custom / User Constructor.
+
+They are furthur categorized into two types:-
+1.Non Parameterized Custom Constructor
+2.Parameterized Custom Constructor
+
+
+class Car{
+ // Non Parameterized
+ Car(){
+ System.out.println("Hello Welcome to Java"); 
+ }
+ public static void main(String args[]){
+ System.out.println("Start");
+ Car c = new Car();
+ System.out.println("End");
+ }
+}
+class Bike{
+ // Paramterized Constructor
+ Bike(int cost){
+ System.out.println("Cost :"+cost);
+ }
+ public static void main(String args[]){
+ System.out.println("Start the Program");
+ Bike b = new Bike(100000);
+ System.out. println("Ending the Program");
+ }
+}
+3.
+class Pen{
+ // Default Constructor
+ Pen(){
+ }
+ public static void main(String args[]){
+ Pen p = new Pen();
+ }
+}
+4.class Student{
+ int age;
+ Student(int a){
+ age = a;
+ }
+ public static void main(String args[]){
+ Student s1 = new Student(25);
+ Student s2 = new Student(45);
+ System.out.println("Age :"+s1.age);
+ System.out.println("Age :"+s2.age);
+ }
+}
+5.class Kangaroo{
+     // Non static variables
+ // Global Variable
+ double height = 5.5 ;
+ void display(){
+ // Local Variable
+ double height = 4.4;
+ System.out.println(height);
+ System.out.println(this.height);
+ }
+ public static void main(String args[]){
+ Kangaroo k = new Kangaroo();
+ k.display();
+ }
+}
+6.class Person{
+ int age;
+ String name;
+ Person(int age, String name){
+ this.age = age;
+ this.name = name;
+ }
+ public static void main(String args[]){
+ Person p1 = new Person(20,"Tom");
+ Person p2 = new Person(40,"Jerry");
+ System.out.println("Name : "+ p1.name + " Age :"+p1.age);
+ System.out.println("Name :"+p2.name + " Age :"+p2.age);
+ }
+}
+7.
+class Father{
+ int age = 40;
+}
+class Son extends Father{
+ String name = "Tom";
+}
+class Test{
+ public static void main(String args[]){
+ Son s = new Son();
+ System.out.println(s.age);
+ System.out.println(s.name);
+ }
+}
+8.class University{
+ String UniversityName = "JNTU";
+ void conductExams(){
+ System.out.println("JNTU is Conducting Exams");
+ }
+ }
+class College extends University{
+ String collegeName = "Aspiron Khuze Technology";
+ void providePlacements(){
+ System.out.println("Aspiron Khuze Technology provides placement also");
+ }
+}
+class Department extends College{
+ String departementName = "Computer Science";
+ void fest(){
+ System.out.println("Cs Departement has a fest called as Equinox");
+ }
+}
+class MultiLevel{
+ public static void main(String args[]){
+ Department d = new Department();
+ System.out.println("University Name :"+d.UniversityName);
+ System.out.println("College Name :"+d.collegeName);
+ System.out.println("Departement Name :"+d.departementName);
+ System.out.println("___________________");
+ d.conductExams();
+ d.fest();
+ d.providePlacements();
+ }
+}
