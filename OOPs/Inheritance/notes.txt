@@ -1,0 +1,10 @@
+Inheritance:-
+------------
+1.Inheritance is a process of one class acquiring the properties or another class.
+2.A class which gives or shares the properties are called as super class, Base
+  class or parent class.
+3.A class which acquires or accepts the properties are called as sub class,
+  Derived class or child class.
+4.In java achieve inheritance with the help of "extends" keywords.
+5.In a java only variables and method are inherited where as clocks and 
+  constructors are not inherited. 
